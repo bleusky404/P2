@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Input</title>
+    <title>DIVE</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        color: white;
+        }
+    </style>
 </head>
 <body>
     <div id="page1">
-        <h1>Enter a Word</h1>
-        <input type="text" id="userInput" placeholder="Type a word...">
-        <button onclick="nextPage()">NEXT</button>
+        <h1>What type of contents did you scroll through today?</h1>
+        <input type="text" id="userInput" placeholder="You scrolled through...">
+        <button onclick="nextPage()">DIVE</button>
     </div>
     <div id="page2" style="display: none;">
-        <h1>You Entered:</h1>
-        <p id="displayWord"></p>
+        <div class="background">
+            <div class="background-layer" style="background: linear-gradient(to top,rgb(153, 233, 255), white);"></div>
+            <div class="background-layer" style="background: linear-gradient(to top,rgb(34, 169, 199), rgb(153, 233, 255));"></div>
+            <div class="background-layer" style="background: linear-gradient(to top,rgb(16, 97, 179), rgb(34, 169, 199));"></div>
+            <div class="background-layer" style="background: linear-gradient(to top,rgb(11, 40, 158), rgb(16, 97, 179));"></div>
+            <div class="background-layer" style="background: linear-gradient(to top,rgb(0, 10, 59), rgb(11, 40, 158));"></div>
+        </div>
+        <div id="displayWord"></div>
+    </div>
+    <div id="page3" style="display: none;">
+        <h1>YOU DROWNED ¯\_(ツ)_/¯</h1>
     </div>
     <script src="script.js"></script>
 </body>
